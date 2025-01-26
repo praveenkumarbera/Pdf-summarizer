@@ -1,1 +1,36 @@
-fuck offf!!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Summary - Hackathon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PDF Summarizer</h1>
+            <p>Upload your PDF and get a summary instantly!</p>
+        </div>
+
+        <!-- PDF Upload Section -->
+        <div class="upload-section">
+            <input type="file" id="pdfFile" accept=".pdf" />
+            <button onclick="uploadPDF()">Summarize PDF</button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading">
+            <span>Loading...</span>
+        </div>
+
+        <!-- Display Summary -->
+        <div id="summary" class="summary">
+            <h3>Summary:</h3>
+            <p id="summarizedText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
